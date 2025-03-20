@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+VIC+Guides&family=Playwrite+IE+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+:root {
+  --bg-color: #f6ebda;
+  --primary-text-color: #000000;
+  --secondary-text-color: #d4872d;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--bg-color);
+}
+header {
+  position: relative;
+  width: 100%;
+  top: 35px;
+  left: 8%;
+  /* margin-left: 25px; */
+  /* margin-top: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+}
+.header .logo {
+  font-family: Grechen Fuemen;
+  font-size: 2.5rem;
+  margin-left: 50px;
+  color: var(--primary-text-color);
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.header span {
+  font-size: 2rem;
+  font-family: Grechen Fuemen;
+  color: var(--secondary-text-color);
+}
+
+.header .bx {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+  display: none;
+  cursor: pointer;
+}
+.navbar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.navbar a {
+  font-size: 1.3rem;
+  color: var(--primary-text-color);
+  margin: 0 25px;
+  font-weight: 550;
+  transition: 0.3 ease-in-out;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    color: var(--secondary-text-color);
+    border-bottom: 3px solid var(--secondary-text-color);
+  }
+}
+.home {
+  display: flex;
+  /* align-items: center;  */
+  justify-content: flex-start; /* Align left */
+  height: 100vh; /* Full screen height */
+  padding-left: 12%; /* Adjust as needed */
+  margin-top: 8%;
+}
+
+.home {
+  padding: 90px 150px;
+}
+.home-content {
+  max-width: 50%;
+  height: 350px;
+}
+
+.home-content h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  line-height: 1.2;
+}
+.home-content h2 span {
+  color: var(--secondary-text-color);
+}
+
+.home-content h4 {
+  padding: 10px 0;
+  color: #000000ca;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.home img {
+  width: 350px; /* Adjust image size */
+  height: 350px; /* Ensure uniform height */
+  margin-left: 10%;
+  object-fit: cover; /* Crop and fit the image properly */
+  border-radius: 50%; /* Makes it circular */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.46); /* Optional shadow for better appearance */
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.order-button {
+  font-size: 1rem;
+  padding: 10px 25px;
+  background-color: var(--secondary-text-color);
+  color: var(--bg-color);
+  margin-top: 10px;
+  border-radius: 25px;
+  font-weight: 550;
+  border: 3px solid transparent;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
+    border: 3px solid var(--secondary-text-color);
+  }
+}
+.order-button .bx {
+  font-size: 20px;
+}
+.more-menu {
+  background-color: var(--bg-color);
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 550;
+  margin: 0 10px;
+  padding: 20px 55px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    color: var(--secondary-text-color);
+  }
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(assets/about-us.webp);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+}
+.about-content h2{
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+.about-content span{
+  font-size: 3.5rem;
+  color: var(--secondary-text-color);
+  font-weight: 800;
+}
+.about-content{
+  text-align: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(103, 72, 54, 0.679);
+  border: 1.5px solid #674836(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  padding: 5rem;
+  width: 50%;
+
+}
+.about-content p{
+  color: white;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.about-content p span{
+  color: var(--secondary-text-color);
+  font-size: 1.3rem;
+}
