@@ -20,23 +20,24 @@ html {
 }
 body {
   background-color: var(--bg-color);
+  padding-top: 60px;
 }
 header {
-  position: relative;
+  position: fixed;
+  background-color: var(--bg-color);
   width: 100%;
-  top: 35px;
-  left: 8%;
-  /* margin-left: 25px; */
-  /* margin-top: 5px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.274);
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 5px;
+  z-index: 10;
 }
 .header .logo {
   font-family: Grechen Fuemen;
   font-size: 2.5rem;
-  margin-left: 50px;
+  margin-left: 100px;
   color: var(--primary-text-color);
   cursor: pointer;
   transition: 0.3s ease;
@@ -61,6 +62,7 @@ header {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-left: 200px;
 }
 .navbar a {
   font-size: 1.3rem;
@@ -83,15 +85,20 @@ header {
   justify-content: flex-start; /* Align left */
   height: 100vh; /* Full screen height */
   padding-left: 12%; /* Adjust as needed */
-  margin-top: 8%;
+  /* margin-top: 8%; */
+  scroll-margin-top: 60px
 }
 
 .home {
   padding: 90px 150px;
+  min-height: 80vh;
 }
 .home-content {
   max-width: 50%;
   height: 350px;
+  margin-top: 60px;
+  margin-left: 30px;
+
 }
 
 .home-content h2 {
@@ -164,7 +171,7 @@ header {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  min-width: auto;
+  max-width: 100%;
   background-image: url(assets/about-us.webp);
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.381);
@@ -349,24 +356,28 @@ header {
   display: grid;
   grid-template-rows:repeat(4,1fr) 2fr;
   justify-content: center;
-  row-gap: 0.5rem;
+  row-gap: 1.5rem;
 }
-.contact-container input{
+.contact-container input,
+.contact-container textarea
+{
   background-color: #d3cdc4;
   border: 2px solid rgba(0, 0, 0, 0.825);
   /* margin-top: 5px; */
+  padding: 10px;
   height: 40px;
   width: 350px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.345);
 }
+.contact-container textarea{
+  height: 100px;
+}
 .contact-container ::placeholder{
   font-size: 1.1rem;
   padding: 10px;
 }
-.contact-container #message{
-  height: 120px;
-}
+
 #contact-button{
   font-size: 1.1rem;
   font-weight: 600;
@@ -384,4 +395,79 @@ header {
   &:active{
     background-color: #d2691eac;
   }
+}
+.footer{
+  background-color: var(--secondary-text-color);
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.475);
+  height: 150px;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social a{
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 25px;
+  color: #e9d8d8;
+  transition: transform 0.2s;
+
+  &:hover{
+    transform: translateY(-5px);
+  }
+  &:active{
+    transform: rotate(-180deg);
+  }
+}
+.list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 10px;
+}
+.list a{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 15px;
+  color: #000000d8;
+}
+@media (max-width: 1200px) {
+  html{
+    font-size: 55%;
+  }
+  .review-container{
+    padding-bottom: 7rem;
+    grid-template-columns:repeat(1, 1fr) ;
+    margin: 0 5rem;
+  }
+}
+@media (max-width:991px) {
+  header{
+    padding: 2rem 3%;
+  }
+  section{
+    padding: 10rem 3% 2rem;
+  }
+  .coffee{
+    padding-bottom: 7rem;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+}
+@media (max-width:895px) {
+  #menu-icon{
+    display: block;
+  }
+  
 }

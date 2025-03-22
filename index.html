@@ -15,7 +15,7 @@
     <header class="header">
       <!-- <img src="assets/coffee_logo.png" alt="Logo"> -->
       <a href="#home" class="logo"> <span>C</span>offee <span>Street</span> </a>
-      <i class="bx bx-menu"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
         <a href="#home">Home</a>
@@ -38,7 +38,7 @@
         <button type="submit" class="order-button">
           Order Now <i class="bx bx-cart"></i>
         </button>
-        <button class="more-menu">More menu</button>
+        <a href="#product"><button class="more-menu">More menu</button></a>
       </div>
       <img src="assets/Coffee.jpeg" alt="Coffee Image" />
     </section>
@@ -59,10 +59,10 @@
           because great coffee makes great moments. ☕ Fuel your day, one cup at
           a time.
         </p>
-        <button class="order-button">Order Now</button>
+        <a href="#product"><button class="order-button">Order Now</button></a>
       </div>
     </section>
-    <section class="coffee" id="coffees">
+    <section class="coffee" id="product">
       <h2 class="heading">Coffees</h2>
       <div class="coffees-container">
         <div class="coffee-box">
@@ -154,7 +154,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Contact Us</h2>
       <div class="contact-container">
         <input type="text" placeholder="Full Name" id="name" />
@@ -167,10 +167,39 @@
           <option value="Support"></option>
           <option value="Other"></option>
         </datalist>
-        <input type="text" placeholder="meassage" id="message" />
+        <textarea name="" id="text-area" placeholder="Message"></textarea>
       </div>
       <button id="contact-button">Send message</button>
       
     </section>
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-pinterest'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#product">Product</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        © Coffe Street || All Right Reserved
+      </p>
+    </footer>
   </body>
 </html>
